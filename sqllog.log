@@ -1,0 +1,252 @@
+2021/10/13 15:10:58 databaseLogger wms connect success
+2021/10/13 15:10:58 databaseLogger haidian connect success
+2021/10/13 15:11:04 databaseLogger wms select success
+2021/10/13 15:11:04 databaseLogger wms wms_write_back oper_task_number: [('1182021092740000387', '11820210927000568', 'YBQXINT1221092300510', '1', '1', '118001', '503000002', 30.0, 30.0, '9', '02', None, '11811847072988', '674885', '2012152', None, datetime.datetime(2022, 6, 14, 0, 0), '2020.12.15', 30.0, 30.0, '498665', None, None, datetime.datetime(2021, 9, 27, 0, 0), '118784', datetime.datetime(2021, 9, 27, 0, 0), None, datetime.datetime(2021, 9, 27, 16, 32, 14), None, None, '1', None, None, '118', '503', None, None, '0', 'I', datetime.datetime(2021, 9, 27, 16, 55, 10), datetime.datetime(2021, 9, 27, 16, 32, 14), None, 16347351, None, None, None, None, None, None, '1182021092700056801', None, None, None, None, None, None, None, None), ('1182021092740000392', '11820210927000564', 'YBQXINT1221092300510', '2', '1', '118001', '503000001', 50.0, 50.0, '9', '02', None, '11811847072920', '764412', '20200508', None, datetime.datetime(2023, 5, 5, 0, 0), '2020.05.06', 50.0, 50.0, '498665', None, None, datetime.datetime(2021, 9, 27, 0, 0), '118784', datetime.datetime(2021, 9, 27, 0, 0), None, datetime.datetime(2021, 9, 27, 16, 33, 12), None, None, '1', None, None, '118', '503', None, None, '0', 'I', datetime.datetime(2021, 9, 27, 17, 38, 39), datetime.datetime(2021, 9, 27, 16, 33, 12), None, 16347376, None, None, None, None, None, None, '1182021092700056401', None, None, None, None, None, None, None, None)]
+2021/10/13 15:11:05 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/13 15:11:08 databaseLogger wms execute success
+2021/10/13 15:11:08 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/13 15:11:08 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/13 15:11:12 databaseLogger wms execute success
+2021/10/13 15:11:12 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/13 15:11:18 databaseLogger wms select success
+2021/10/13 15:11:18 databaseLogger wms oper_number: [('YBQXINT1221092300510', '1', '101', '118001', '9', '498665', datetime.datetime(2021, 10, 13, 15, 5, 9), None, datetime.datetime(2021, 10, 13, 15, 5, 9), None, None, '0', '118', '503', None, None, '0', 'I', None, datetime.datetime(2021, 10, 13, 15, 5, 9), None, 5927443)]
+2021/10/13 15:11:18 databaseLogger haidian wms_write_back  Wmsoperate insert success
+2021/10/13 15:11:19 databaseLogger wms execute success
+2021/10/13 15:11:19 databaseLogger wms wms_write_back Operate_Log update success
+2021/10/13 15:11:22 databaseLogger wms select success
+2021/10/13 15:11:22 databaseLogger wms wms_write_back state_number: [('498665', '11820210927000568', datetime.datetime(2021, 9, 27, 16, 32, 14), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 9, 27, 16, 32, 14), datetime.datetime(2021, 9, 27, 16, 55, 10), 'I', 'E', None, 16347351, None), ('498665', '11820210927000564', datetime.datetime(2021, 9, 27, 16, 33, 12), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 9, 27, 16, 33, 12), datetime.datetime(2021, 9, 27, 17, 38, 39), 'I', 'E', None, 16347376, None)]
+2021/10/13 15:11:23 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/13 15:11:23 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/13 15:11:23 databaseLogger haidian close success
+2021/10/13 15:11:23 databaseLogger wms close success
+2021/10/13 17:48:02 databaseLogger haidian connect success
+2021/10/13 17:48:02 databaseLogger wms connect success
+2021/10/13 17:48:03 databaseLogger haidian select success
+2021/10/13 17:48:03 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101300043', '1', '507411', '715281', 1629.8, 30.0, 0, 0.0, 48894.0, '0', '杜建光', datetime.datetime(2021, 10, 13, 9, 13, 57), None, '侯萌', datetime.datetime(2021, 10, 13, 9, 13, 57), None, 'M', datetime.datetime(2021, 10, 13, 9, 13, 57), '景华10支，建东20支', '503', '侯萌', None, datetime.datetime(2021, 10, 13, 17, 48, 3), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/13 17:48:03 databaseLogger wms wms insert success
+2021/10/13 17:48:04 databaseLogger haidian execute success
+2021/10/13 17:48:04 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 17:48:04 databaseLogger haidian close success
+2021/10/13 17:48:04 databaseLogger wms close success
+2021/10/13 18:33:11 databaseLogger haidian connect success
+2021/10/13 18:33:11 databaseLogger wms connect success
+2021/10/13 18:33:12 databaseLogger haidian select success
+2021/10/13 18:33:12 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101200448', '1', '501304', '765699', 46.55, 30.0, 0, 0.0, 1396.5, '0', '杜建光', datetime.datetime(2021, 10, 12, 10, 14, 35), None, '艾秋含', datetime.datetime(2021, 10, 12, 10, 14, 35), None, 'M', datetime.datetime(2021, 10, 12, 10, 14, 35), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 13), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/13 18:33:12 databaseLogger wms wms insert success
+2021/10/13 18:33:13 databaseLogger haidian execute success
+2021/10/13 18:33:13 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:13 databaseLogger haidian select success
+2021/10/13 18:33:13 databaseLogger haidian purchasenumber: []
+2021/10/13 18:33:14 databaseLogger haidian select success
+2021/10/13 18:33:14 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101100543', '2', '501210', '750031', 46.5, 150.0, 0, 0.0, 6975.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '5', '501210', '712996', 56.0, 100.0, 0, 0.0, 5600.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '6', '501210', '754328', 56.0, 120.0, 0, 0.0, 6720.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '3', '501210', '748326', 46.5, 144.0, 0, 0.0, 6696.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '8', '501210', '748324', 45.5, 50.0, 0, 0.0, 2275.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '10', '501210', '761720', 42.5, 100.0, 0, 0.0, 4250.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '4', '501210', '677991', 46.5, 50.0, 0, 0.16, 2325.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '1', '501210', '675492', 29.5, 100.0, 0, 0.42, 2950.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '7', '501210', '570912', 106.0, 40.0, 0, 0.0, 4240.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100543', '9', '501210', '751421', 45.5, 150.0, 0, 0.0, 6825.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '艾秋含', datetime.datetime(2021, 10, 11, 10, 38, 11), None, 'M', datetime.datetime(2021, 10, 11, 10, 38, 11), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 14), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/13 18:33:14 databaseLogger wms wms insert success
+2021/10/13 18:33:14 databaseLogger haidian execute success
+2021/10/13 18:33:14 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:14 databaseLogger wms wms insert success
+2021/10/13 18:33:15 databaseLogger haidian execute success
+2021/10/13 18:33:15 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:15 databaseLogger wms wms insert success
+2021/10/13 18:33:16 databaseLogger haidian execute success
+2021/10/13 18:33:16 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:16 databaseLogger wms wms insert success
+2021/10/13 18:33:17 databaseLogger haidian execute success
+2021/10/13 18:33:17 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:17 databaseLogger wms wms insert success
+2021/10/13 18:33:17 databaseLogger haidian execute success
+2021/10/13 18:33:17 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:17 databaseLogger wms wms insert success
+2021/10/13 18:33:18 databaseLogger haidian execute success
+2021/10/13 18:33:18 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:18 databaseLogger wms wms insert success
+2021/10/13 18:33:19 databaseLogger haidian execute success
+2021/10/13 18:33:19 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:19 databaseLogger wms wms insert success
+2021/10/13 18:33:20 databaseLogger haidian execute success
+2021/10/13 18:33:20 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:20 databaseLogger wms wms insert success
+2021/10/13 18:33:21 databaseLogger haidian execute success
+2021/10/13 18:33:21 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:21 databaseLogger wms wms insert success
+2021/10/13 18:33:21 databaseLogger haidian execute success
+2021/10/13 18:33:21 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:22 databaseLogger haidian select success
+2021/10/13 18:33:22 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101201039', '1', '508244', '762630', 25.33, 30.0, 0, 0.0, 759.9, '0', '杜建光', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '艾秋含', datetime.datetime(2021, 10, 12, 14, 7, 8), None, 'M', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 22), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101201039', '3', '508244', '669728', 57.55, 10.0, 0, 0.0, 575.5, '0', '杜建光', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '艾秋含', datetime.datetime(2021, 10, 12, 14, 7, 8), None, 'M', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 22), None, None, '0', '.101.118.503.', '118', '118', '1', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101201039', '2', '508244', '763868', 39.1, 20.0, 0, 0.0, 782.0, '0', '杜建光', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '艾秋含', datetime.datetime(2021, 10, 12, 14, 7, 8), None, 'M', datetime.datetime(2021, 10, 12, 14, 7, 8), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 13, 18, 33, 22), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/13 18:33:22 databaseLogger wms wms insert success
+2021/10/13 18:33:22 databaseLogger haidian execute success
+2021/10/13 18:33:22 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:22 databaseLogger wms wms insert success
+2021/10/13 18:33:23 databaseLogger haidian execute success
+2021/10/13 18:33:23 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:23 databaseLogger wms wms insert success
+2021/10/13 18:33:24 databaseLogger haidian execute success
+2021/10/13 18:33:24 databaseLogger haidian purchase_apply haidian update success
+2021/10/13 18:33:24 databaseLogger haidian close success
+2021/10/13 18:33:24 databaseLogger wms close success
+2021/10/14 11:43:11 databaseLogger wms connect success
+2021/10/14 11:43:12 databaseLogger haidian connect success
+2021/10/14 11:43:18 databaseLogger wms select success
+2021/10/14 11:43:18 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000442', '11820211013000649', 'YBQXINT1221100900761', '1', '1', '118001', '503006001', 6.0, 6.0, '9', '02', None, '11811846587539', '668234', 'T042260', None, datetime.datetime(2022, 8, 22, 0, 0), '2020.08.23', 6.0, 6.0, '506403', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, '1', None, None, '118', '503', None, None, '0', 'I', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), None, 16452761, None, None, None, None, None, None, '1182021101300064901', None, None, None, None, None, None, None, None)]
+2021/10/14 11:43:19 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/14 11:43:22 databaseLogger wms execute success
+2021/10/14 11:43:22 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/14 11:43:28 databaseLogger wms select success
+2021/10/14 11:43:28 databaseLogger wms oper_number: []
+2021/10/14 11:43:31 databaseLogger wms select success
+2021/10/14 11:43:31 databaseLogger wms wms_write_back state_number: [('506403', '11820211013000649', datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), 'I', 'E', None, 16452761, None)]
+2021/10/14 11:43:32 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/14 11:43:32 databaseLogger haidian close success
+2021/10/14 11:43:32 databaseLogger wms close success
+2021/10/14 14:15:16 databaseLogger wms connect success
+2021/10/14 14:15:16 databaseLogger haidian connect success
+2021/10/14 14:15:22 databaseLogger wms select success
+2021/10/14 14:15:22 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000443', '11820211012000521', 'YBQXINT1221090901019', '1', '1', '118001', '503006001', 10.0, 10.0, '9', '02', None, '11811846981476', '715281', '325277', None, datetime.datetime(2022, 12, 31, 0, 0), '2021.01.01', 10.0, 10.0, '507411', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 7, 7), None, None, '1', None, None, '118', '503', None, None, '0', 'I', datetime.datetime(2021, 10, 13, 17, 7, 7), datetime.datetime(2021, 10, 13, 17, 7, 7), None, 16452814, None, None, None, None, None, None, '1182021101200052101', None, None, None, None, None, None, None, None)]
+2021/10/14 14:15:23 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/14 14:15:26 databaseLogger wms execute success
+2021/10/14 14:15:26 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/14 14:15:33 databaseLogger wms select success
+2021/10/14 14:15:33 databaseLogger wms oper_number: []
+2021/10/14 14:15:36 databaseLogger wms select success
+2021/10/14 14:15:36 databaseLogger wms wms_write_back state_number: [('507411', '11820211012000521', datetime.datetime(2021, 10, 13, 17, 7, 7), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 10, 13, 17, 7, 7), datetime.datetime(2021, 10, 13, 17, 7, 7), 'I', 'E', None, 16452814, None)]
+2021/10/14 14:15:36 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/14 14:15:36 databaseLogger haidian close success
+2021/10/14 14:15:37 databaseLogger wms close success
+2021/10/14 14:30:06 databaseLogger wms connect success
+2021/10/14 14:30:06 databaseLogger haidian connect success
+2021/10/14 14:30:12 databaseLogger wms select success
+2021/10/14 14:30:12 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000443', '11820211012000521', 'YBQXINT1221090901019', '1', '1', '118001', '503006001', 10.0, 10.0, '9', '02', None, '11811846981476', '715281', '325277', None, datetime.datetime(2022, 12, 31, 0, 0), '2021.01.01', 10.0, 10.0, '507411', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 7, 7), None, None, '1', None, None, '118', '503', None, None, 'E', 'I', datetime.datetime(2021, 10, 13, 17, 7, 7), datetime.datetime(2021, 10, 13, 17, 7, 7), None, 16452814, None, None, None, None, None, None, '1182021101200052101', None, None, None, None, None, None, None, None)]
+2021/10/14 14:30:13 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/14 14:30:16 databaseLogger wms execute success
+2021/10/14 14:30:16 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/14 14:30:27 databaseLogger wms select success
+2021/10/14 14:30:27 databaseLogger wms oper_number: [('YBQXINT1221090901019', '1', '101', '118001', '9', '507411', datetime.datetime(2021, 10, 14, 14, 16, 9), None, datetime.datetime(2021, 10, 14, 14, 16, 9), None, None, '0', '118', '503', None, None, '0', 'I', None, datetime.datetime(2021, 10, 14, 14, 16, 9), None, 5930493)]
+2021/10/14 14:30:27 databaseLogger haidian wms_write_back  Wmsoperate insert success
+2021/10/14 14:30:28 databaseLogger wms execute success
+2021/10/14 14:30:28 databaseLogger wms wms_write_back Operate_Log update success
+2021/10/14 14:30:32 databaseLogger wms select success
+2021/10/14 14:30:32 databaseLogger wms wms_write_back state_number: [('507411', '11820211012000521', datetime.datetime(2021, 10, 13, 17, 7, 7), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 10, 13, 17, 7, 7), datetime.datetime(2021, 10, 13, 17, 7, 7), 'I', 'E', None, 16452814, None)]
+2021/10/14 14:30:32 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/14 14:30:32 databaseLogger haidian close success
+2021/10/14 14:30:32 databaseLogger wms close success
+2021/10/14 14:33:31 databaseLogger wms connect success
+2021/10/14 14:33:31 databaseLogger haidian connect success
+2021/10/14 14:33:37 databaseLogger wms select success
+2021/10/14 14:33:37 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000442', '11820211013000649', 'YBQXINT1221100900761', '1', '1', '118001', '503006001', 6.0, 6.0, '9', '02', None, '11811846587539', '668234', 'T042260', None, datetime.datetime(2022, 8, 22, 0, 0), '2020.08.23', 6.0, 6.0, '506403', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, '1', None, None, '118', '503', None, None, 'E', 'I', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), None, 16452761, None, None, None, None, None, None, '1182021101300064901', None, None, None, None, None, None, None, None)]
+2021/10/14 14:33:38 databaseLogger haidian wms_write_back Wmsoperate_task insert success
+2021/10/14 14:33:41 databaseLogger wms execute success
+2021/10/14 14:33:41 databaseLogger wms wms_write_back Operate_Task_Log update success
+2021/10/14 14:33:52 databaseLogger wms select success
+2021/10/14 14:33:52 databaseLogger wms oper_number: [('YBQXINT1221100900761', '1', '101', '118001', '9', '506403', datetime.datetime(2021, 10, 14, 11, 44, 9), None, datetime.datetime(2021, 10, 14, 11, 44, 9), None, None, '0', '118', '503', None, None, '0', 'I', None, datetime.datetime(2021, 10, 14, 11, 44, 9), None, 5930336)]
+2021/10/14 14:33:53 databaseLogger haidian wms_write_back  Wmsoperate insert success
+2021/10/14 14:33:53 databaseLogger wms execute success
+2021/10/14 14:33:53 databaseLogger wms wms_write_back Operate_Log update success
+2021/10/14 14:33:57 databaseLogger wms select success
+2021/10/14 14:33:57 databaseLogger wms wms_write_back state_number: [('506403', '11820211013000649', datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, None, '118', '503', '118001', '101', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), 'I', 'E', None, 16452761, None)]
+2021/10/14 14:33:57 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/14 14:33:57 databaseLogger haidian close success
+2021/10/14 14:33:57 databaseLogger wms close success
+2021/10/14 15:17:12 databaseLogger haidian connect success
+2021/10/14 15:17:12 databaseLogger wms connect success
+2021/10/14 15:17:13 databaseLogger haidian select success
+2021/10/14 15:17:13 databaseLogger haidian salesnumber: [('YA001122110140000337', 'YA001122110140000337', '1', '201', datetime.datetime(2021, 10, 14, 9, 56, 57), '22091024', '712110', '0', None, None, None, None, 65.55, 3933.0, 65.55, 68.0, 100.0, 65.55, '118001', None, '魏玉琴', None, '魏玉琴', 452.47, 13, 3480.53, None, None, '-', None, '5', None, 'HRHN', None, 65.55, '-', '0', '-', '-', '-', '-', '-', 0, '待编码', '503', None, '118', datetime.datetime(2021, 10, 14, 15, 17, 14), None, datetime.datetime(2021, 10, 14, 15, 17, 14), '0', '.101.118.503.', None, '118', '1', '22091024', '2622167', '22091024', None, 0, '0', None, 1, None, 1, None, None, None, None, None, None, 60.0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, '0', None, None)]
+2021/10/14 15:17:13 databaseLogger wms wms insert success
+2021/10/14 15:17:14 databaseLogger haidian execute success
+2021/10/14 15:17:14 databaseLogger haidian delivery_apply haidian update success
+2021/10/14 15:17:14 databaseLogger haidian close success
+2021/10/14 15:17:14 databaseLogger wms close success
+2021/10/14 15:25:05 databaseLogger wms connect success
+2021/10/14 15:25:05 databaseLogger haidian connect success
+2021/10/14 15:25:11 databaseLogger wms select success
+2021/10/14 15:25:11 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000442', '11820211013000649', 'YBQXINT1221100900761', '1', '1', '118001', '503006001', 6.0, 6.0, '9', '02', None, '11811846587539', '668234', 'T042260', None, datetime.datetime(2022, 8, 22, 0, 0), '2020.08.23', 6.0, 6.0, '506403', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, '1', None, None, '118', '503', None, None, 'E', 'I', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), None, 16452761, None, None, None, None, None, None, '1182021101300064901', None, None, None, None, None, None, None, None)]
+2021/10/14 15:25:11 databaseLogger haidian close success
+2021/10/14 15:25:11 databaseLogger wms close success
+2021/10/14 15:25:56 databaseLogger wms connect success
+2021/10/14 15:25:57 databaseLogger haidian connect success
+2021/10/14 15:26:02 databaseLogger wms select success
+2021/10/14 15:26:02 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000442', '11820211013000649', 'YBQXINT1221100900761', '1', '1', '118001', '503006001', 6.0, 6.0, '9', '02', None, '11811846587539', '668234', 'T042260', None, datetime.datetime(2022, 8, 22, 0, 0), '2020.08.23', 6.0, 6.0, '506403', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, '1', None, None, '118', '503', None, None, 'E', 'I', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), None, 16452761, None, None, None, None, None, None, '1182021101300064901', None, None, None, None, None, None, None, None)]
+2021/10/14 15:26:03 databaseLogger haidian close success
+2021/10/14 15:26:03 databaseLogger wms close success
+2021/10/14 15:28:29 databaseLogger wms connect success
+2021/10/14 15:28:29 databaseLogger haidian connect success
+2021/10/14 15:28:35 databaseLogger wms select success
+2021/10/14 15:28:35 databaseLogger wms wms_write_back oper_task_number: [('1182021101340000442', '11820211013000649', 'YBQXINT1221100900761', '1', '101', '118001', '503006001', 6.0, 6.0, '9', '02', None, '11811846587539', '668234', 'T042260', None, datetime.datetime(2022, 8, 22, 0, 0), '2020.08.23', 6.0, 6.0, '506403', None, None, datetime.datetime(2021, 10, 13, 0, 0), '118666', datetime.datetime(2021, 10, 13, 0, 0), None, datetime.datetime(2021, 10, 13, 17, 5, 8), None, None, '1', None, None, '118', '503', None, None, 'E', 'I', datetime.datetime(2021, 10, 13, 17, 5, 8), datetime.datetime(2021, 10, 13, 17, 5, 8), None, 16452761, None, None, None, None, None, None, '1182021101300064901', None, None, None, None, None, None, None, None)]
+2021/10/14 15:28:35 databaseLogger haidian close success
+2021/10/14 15:28:35 databaseLogger wms close success
+2021/10/14 17:32:06 databaseLogger haidian connect success
+2021/10/14 17:32:06 databaseLogger wms connect success
+2021/10/14 17:32:06 databaseLogger haidian select success
+2021/10/14 17:32:06 databaseLogger haidian salesnumber: []
+2021/10/14 17:32:07 databaseLogger haidian select success
+2021/10/14 17:32:07 databaseLogger haidian salesnumber: []
+2021/10/14 17:32:07 databaseLogger haidian close success
+2021/10/14 17:32:07 databaseLogger wms close success
+2021/10/14 17:36:03 databaseLogger haidian connect success
+2021/10/14 17:36:04 databaseLogger wms connect success
+2021/10/14 17:36:04 databaseLogger haidian select success
+2021/10/14 17:36:04 databaseLogger haidian salesnumber: [('YA001122110140000827', 'YA001122110140000827', '1', '201', datetime.datetime(2021, 10, 14, 15, 46, 35), '22091004', '765043', '0', None, None, None, None, 3069.0, 36828.0, 3069.0, 3300.0, 100.0, 3069.0, '118001', None, '席海珍', None, '席海珍', 1072.66, 3, 35755.34, None, None, '-', None, '5', None, 'HRHN', None, 3069.0, '-', '0', '-', '-', '-', '-', '-', 0, '待编码', '503', None, '118', datetime.datetime(2021, 10, 14, 17, 36, 5), None, datetime.datetime(2021, 10, 14, 17, 36, 5), '0', '.101.118.503.', None, '118', '1', '22091004', '3018552', '22091004', None, 0, '0', None, 1, None, 1, None, None, None, None, None, None, 12.0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, '0', None, None)]
+2021/10/14 17:36:04 databaseLogger wms wms insert success
+2021/10/14 17:36:05 databaseLogger haidian execute success
+2021/10/14 17:36:05 databaseLogger haidian delivery_apply haidian update success
+2021/10/14 17:36:05 databaseLogger haidian select success
+2021/10/14 17:36:05 databaseLogger haidian salesnumber: []
+2021/10/14 17:36:05 databaseLogger haidian close success
+2021/10/14 17:36:05 databaseLogger wms close success
+2021/10/14 17:36:54 databaseLogger haidian connect success
+2021/10/14 17:36:54 databaseLogger wms connect success
+2021/10/14 17:36:55 databaseLogger haidian select success
+2021/10/14 17:36:55 databaseLogger haidian salesnumber: []
+2021/10/14 17:36:55 databaseLogger haidian close success
+2021/10/14 17:36:55 databaseLogger wms close success
+2021/10/14 19:23:43 databaseLogger haidian connect success
+2021/10/14 19:23:43 databaseLogger wms connect success
+2021/10/14 19:23:44 databaseLogger haidian select success
+2021/10/14 19:23:44 databaseLogger haidian salesnumber: [('YA001122110140000791', 'YA001122110140000791', '1', '201', datetime.datetime(2021, 10, 14, 15, 25, 3), '22091012', '715281', '0', None, None, None, None, 1629.8, 3259.6, 1629.8, 1719.9, 100.0, 1629.8, '118001', None, '薛浩田', None, '薛浩田', 375.0, 13, 2884.6, None, None, '-', None, '5', None, 'HRHN', None, 1629.8, '-', '0', '-', '-', '-', '-', '-', 0, '待编码', '503', None, '118', datetime.datetime(2021, 10, 14, 19, 23, 45), None, datetime.datetime(2021, 10, 14, 19, 23, 45), '0', '.101.118.503.', None, '118', '1', '22091012', '2627019', '22091012', None, 0, '0', None, 1, None, 1, None, None, None, None, None, None, 2.0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, '0', None, None)]
+2021/10/14 19:23:44 databaseLogger wms wms insert success
+2021/10/14 19:23:44 databaseLogger haidian execute success
+2021/10/14 19:23:44 databaseLogger haidian delivery_apply haidian update success
+2021/10/14 19:23:45 databaseLogger haidian close success
+2021/10/14 19:23:45 databaseLogger wms close success
+2021/10/18 15:54:33 databaseLogger haidian connect success
+2021/10/18 15:54:34 databaseLogger wms connect success
+2021/10/18 15:54:34 databaseLogger haidian select success
+2021/10/18 15:54:34 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101401165', '1', '977516', '761933', 7189.75, 3.0, 0, 0.0, 21569.25, '0', '杜建光', datetime.datetime(2021, 10, 14, 14, 30, 1), None, '侯萌', datetime.datetime(2021, 10, 14, 14, 30, 1), None, 'M', datetime.datetime(2021, 10, 14, 14, 30, 1), '河大一', '503', '侯萌', None, datetime.datetime(2021, 10, 18, 15, 54, 34), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/18 15:54:34 databaseLogger wms wms insert success
+2021/10/18 15:54:35 databaseLogger haidian execute success
+2021/10/18 15:54:35 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:54:36 databaseLogger haidian close success
+2021/10/18 15:54:36 databaseLogger wms close success
+2021/10/18 15:58:13 databaseLogger haidian connect success
+2021/10/18 15:58:13 databaseLogger wms connect success
+2021/10/18 15:58:14 databaseLogger haidian select success
+2021/10/18 15:58:14 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101100213', '1', '507411', '748883', 7414.68, 8.0, 0, 0.0, 59317.44, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '艾秋含', datetime.datetime(2021, 10, 11, 9, 24, 27), None, 'M', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 18, 15, 58, 13), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100213', '2', '507411', '748882', 1317.26, 8.0, 0, 0.0, 10538.08, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '艾秋含', datetime.datetime(2021, 10, 11, 9, 24, 27), None, 'M', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 18, 15, 58, 13), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101100213', '3', '507411', '715281', 1629.8, 10.0, 0, 0.0, 16298.0, '0', '宋佳敏', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '艾秋含', datetime.datetime(2021, 10, 11, 9, 24, 27), None, 'M', datetime.datetime(2021, 10, 11, 9, 24, 27), None, '503', '艾秋含', None, datetime.datetime(2021, 10, 18, 15, 58, 13), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/18 15:58:14 databaseLogger wms wms insert success
+2021/10/18 15:58:15 databaseLogger haidian execute success
+2021/10/18 15:58:15 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:58:15 databaseLogger wms wms insert success
+2021/10/18 15:58:16 databaseLogger haidian execute success
+2021/10/18 15:58:16 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:58:16 databaseLogger wms wms insert success
+2021/10/18 15:58:16 databaseLogger haidian execute success
+2021/10/18 15:58:16 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:58:17 databaseLogger haidian select success
+2021/10/18 15:58:17 databaseLogger haidian purchasenumber: [(None, 'YBQXINT1221101500341', '2', '507411', '748882', 1317.26, 2.0, 0, 0.0, 2634.52, '0', '杜建光', datetime.datetime(2021, 10, 15, 10, 16, 8), None, '侯萌', datetime.datetime(2021, 10, 15, 10, 16, 8), None, 'M', datetime.datetime(2021, 10, 15, 10, 16, 8), '建东', '503', '侯萌', None, datetime.datetime(2021, 10, 18, 15, 58, 16), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None), (None, 'YBQXINT1221101500341', '1', '507411', '748883', 7414.68, 2.0, 0, 0.0, 14829.36, '0', '杜建光', datetime.datetime(2021, 10, 15, 10, 16, 8), None, '侯萌', datetime.datetime(2021, 10, 15, 10, 16, 8), None, 'M', datetime.datetime(2021, 10, 15, 10, 16, 8), '建东', '503', '侯萌', None, datetime.datetime(2021, 10, 18, 15, 58, 16), None, None, '0', '.101.118.503.', '118', '118', '118001', '101', None, None, None, None, None, None, None, None, None, None, None, None, None, 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)]
+2021/10/18 15:58:17 databaseLogger wms wms insert success
+2021/10/18 15:58:17 databaseLogger haidian execute success
+2021/10/18 15:58:17 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:58:17 databaseLogger wms wms insert success
+2021/10/18 15:58:18 databaseLogger haidian execute success
+2021/10/18 15:58:18 databaseLogger haidian purchase_apply haidian update success
+2021/10/18 15:58:18 databaseLogger haidian close success
+2021/10/18 15:58:18 databaseLogger wms close success
+2021/10/21 09:23:27 databaseLogger wms connect success
+2021/10/21 09:23:27 databaseLogger haidian connect success
+2021/10/21 09:23:33 databaseLogger wms select success
+2021/10/21 09:23:33 databaseLogger wms wms_state_write_back state_number: [('22091015', '11820211020901487', datetime.datetime(2021, 10, 20, 15, 33, 40), '118', '.101.118.503.', None, '118', '503', '118001', '201', datetime.datetime(2021, 10, 20, 15, 50, 30), datetime.datetime(2021, 10, 20, 15, 52, 1), 'I', 'E', None, 16508563, None)]
+2021/10/21 09:23:33 databaseLogger haidian close success
+2021/10/21 09:23:33 databaseLogger wms close success
+2021/10/21 09:29:16 databaseLogger wms connect success
+2021/10/21 09:29:16 databaseLogger haidian connect success
+2021/10/21 09:29:22 databaseLogger wms select success
+2021/10/21 09:29:22 databaseLogger wms wms_state_write_back state_number: [('22091015', '11820211020901487', datetime.datetime(2021, 10, 20, 15, 33, 40), '118', '.101.118.503.', None, '118', '503', '118001', '201', datetime.datetime(2021, 10, 20, 15, 50, 30), datetime.datetime(2021, 10, 20, 15, 52, 1), 'I', 'E', None, 16508563, None)]
+2021/10/21 09:29:22 databaseLogger haidian wms_write_back wmsorderstate insert success
+2021/10/21 09:29:23 databaseLogger haidian close success
+2021/10/21 09:29:23 databaseLogger wms close success

@@ -35,11 +35,11 @@ print(df.columns)
 
 dtyp = set_d_type_dict(df)
 
-# engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB")
+engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB")
 # #方法一
-engine = create_engine(
-    "oracle+cx_oracle://erpdatainput:j7OPm0%v6MXPSQoF@10.0.119.46:1521/HADB1"
-)
+# engine = create_engine(
+#     "oracle+cx_oracle://erpdatainput:j7OPm0%v6MXPSQoF@10.0.119.46:1521/HADB1"
+# )
 
 # engine = create_engine(
 #     "mssql+pymssql://ysadmin:0wM71IakpU&1s&@192.168.0.16:1433/ysdata"
@@ -59,7 +59,7 @@ engine = create_engine(
 
 
 df.to_sql(
-    "gdk_employee_check_tl",
+    "gdk_order_check3_tl",
     con=engine,
     if_exists="replace",
     index=False,

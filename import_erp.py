@@ -16,24 +16,25 @@ def set_d_type_dict(df):
     type_dict = {}
     for i, j in zip(df.columns, df.dtypes):
         if "object" in str(j):
-            type_dict.update({i: VARCHAR(512)})
+            type_dict.update({i: VARCHAR2(512)})
         if "float" in str(j):
-            type_dict.update({i: Integer()})
+            type_dict.update({i: NUMBER(20, 2)})
         if "int" in str(j):
             type_dict.update({i: Integer()})
     return type_dict
 
 
 df = pandas.read_csv("C:/Users/Administrator/Desktop/1.txt", sep="\t", encoding="utf-8")
-
+print(df.columns)
 dtyp = set_d_type_dict(df)
 
 # engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB")
 # #方法一
-engine = create_engine(
-    "oracle+cx_oracle://erpdatainput:j7OPm0%v6MXPSQoF@10.0.119.46:1521/HADB1"
-)
+# engine = create_engine(
+#     "oracle+cx_oracle://erpdatainput:j7OPm0%v6MXPSQoF@10.0.119.46:1521/HADB1"
+# )
 # 方法二
+engine = create_engine("oracle+cx_oracle://wmsinterface:T#ClzR74WuLPIZ1c@SUPPLYCHAIN")
 # engine = create_engine("oracle+cx_oracle://hrhnprod:9bcPa4hr16HN@SUPPLYCHAIN")
 # engine = create_engine("oracle+cx_oracle://hrhnprod:Ww7v*SLuhrDJ@HRHNDB_CS")
 # engine = create_engine("oracle+cx_oracle://erpdatainput:j7OPm0%v6MXPSQoF@ERP_SHENZ_46")
@@ -47,9 +48,8 @@ engine = create_engine(
 # connect_str = "oracle://%s:%s@%s" % (uname, pwd, dsnStr)
 # engine = create_engine(connect_str, pool_recycle=3600)
 
-
 df.to_sql(
-    "gdk_drug_store_tl",
+    "key_customer_tl2",
     con=engine,
     if_exists="replace",
     index=False,

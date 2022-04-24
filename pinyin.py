@@ -5,4 +5,8 @@ def get_pinyin_first_alpha(name):
     return "".join([i[0][0].upper() for i in pinyin(name)])
 
 
-print(get_pinyin_first_alpha("郑州大学第一附属医院"))
+with open(r"C:\Users\Administrator\Desktop\1.txt", mode="rt", encoding="utf-8") as f:
+    line = f.readline().strip()
+    while line:
+        print(get_pinyin_first_alpha(line))
+        line = f.readline().strip()

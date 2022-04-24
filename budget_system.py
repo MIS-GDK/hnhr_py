@@ -20,7 +20,7 @@ conn = pyodbc.connect(
 )
 
 cursor = conn.cursor()
-mynumber = 19926
+mynumber = 2969
 str1 = "BM000"
 for mylist in list1:
     print(mylist)

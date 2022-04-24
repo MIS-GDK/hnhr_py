@@ -30,12 +30,12 @@ class HaiDian:
             res = x.fetchall()
             for data in res:
                 print(data)
-                logging.info(
-                    "---------------------------------------------------------------------------------------------"
-                )
-                logging.info("采购退货明细接口表相关信息: ")
-                logging.info("退仓申请单单号,行号,INCA销售发货单头ID,INCA销售发票明细ID")
-                logging.info(data[1:])
+                # logging.info(
+                #     "---------------------------------------------------------------------------------------------"
+                # )
+                # logging.info("采购退货明细接口表相关信息: ")
+                # logging.info("退仓申请单单号,行号,INCA销售发货单头ID,INCA销售发票明细ID")
+                # logging.info(data[1:])
                 final_data = self.conn_haidian_database_data(data[1], data[2])
                 if final_data:
                     print(final_data)
@@ -96,10 +96,10 @@ class HaiDian:
             # print(sql)
             x = c.execute(sql, pm)
             res = x.fetchone()
-            logging.info("退仓申请单相关信息:")
-            logging.info("商品编码,商品ID,批次,货位,批号,货品名称,规格")
-            logging.info(res)
-            print(res)
+            # logging.info("退仓申请单相关信息:")
+            # logging.info("商品编码,商品ID,批次,货位,批号,货品名称,规格")
+            # logging.info(res)
+            # print(res)
             # 根据退仓申请单信息 查询配送单相关信息
             param2 = {":3": res[2], ":4": res[1], ":5": res[4]}
             sql2 = (
@@ -114,20 +114,21 @@ class HaiDian:
             )
             x2 = c.execute(sql2, param2)
             res2 = x.fetchone()
-            logging.info("配送单相关信息:")
-            logging.info("配送单号,生效时间,备注")
-            logging.info(res2)
+            # logging.info("配送单相关信息:")
+            # logging.info("配送单号,生效时间,备注")
+            # logging.info(res2)
             print(res2)
             if res2 and res2[2].find("委托配送单") != -1:
                 t = res2[2][res2[2].find("：") + 1 : 14]
                 final_data = self.conn_inca_database_data(
                     t, res[0], res[4], res[5], res[6]
                 )
-                logging.info("INCA 销售发货单头单ID,销售发票管理细单ID")
-                logging.info(final_data)
+                # logging.info("INCA 销售发货单头单ID,销售发票管理细单ID")
+                # logging.info(final_data)
             else:
-                print("this can't handle by program,please contact DBA")
-                logging.info("this can't handle by program,please contact DBA")
+                pass
+                # print("this can't handle by program,please contact DBA")
+                # logging.info("this can't handle by program,please contact DBA")
 
             c.close()
             # 关闭连接
@@ -185,5 +186,9 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M",
     filename=r"E:/haidian_log.txt",
 )
-test = HaiDian("122104060000825")
-test.update_database_interface()
+billno_list = [
+    "122203250000145",
+]
+for i in billno_list:
+    test = HaiDian(i)
+    test.update_database_interface()
