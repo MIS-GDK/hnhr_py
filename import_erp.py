@@ -24,8 +24,10 @@ def set_d_type_dict(df):
     return type_dict
 
 
-df = pandas.read_csv("C:/Users/Administrator/Desktop/1.txt", sep="\t", encoding="utf-8")
+df = pandas.read_csv("C:/Users/Administrator/Desktop/2.txt", sep="\t", encoding="utf-8")
+
 print(df.columns)
+print(df.dtypes)
 dtyp = set_d_type_dict(df)
 
 # engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB")
@@ -49,7 +51,7 @@ engine = create_engine("oracle+cx_oracle://wmsinterface:T#ClzR74WuLPIZ1c@SUPPLYC
 # engine = create_engine(connect_str, pool_recycle=3600)
 
 df.to_sql(
-    "key_customer_tl2",
+    "gdk_tl2",
     con=engine,
     if_exists="replace",
     index=False,

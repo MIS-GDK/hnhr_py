@@ -187,7 +187,7 @@ logging.basicConfig(
     filename=r"E:/haidian_log.txt",
 )
 billno_list = [
-    "122203250000145",
+    '122204110000373', '122204070000674'
 ]
 for i in billno_list:
     test = HaiDian(i)
