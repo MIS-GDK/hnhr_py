@@ -1,7 +1,8 @@
 import pandas
 import numpy
 import cx_Oracle
-import pymssql
+
+# import pymssql
 from sqlalchemy.types import Integer, VARCHAR
 
 # from pandas import Series, DataFrame
@@ -29,8 +30,8 @@ def set_d_type_dict(df):
 df = pandas.read_csv("C:/Users/Administrator/Desktop/1.txt", sep="\t", encoding="utf-8")
 
 
-print(df.dtypes)
-print(df.columns)
+# print(df.dtypes)
+# print(df.columns)
 
 
 dtyp = set_d_type_dict(df)
@@ -59,7 +60,7 @@ engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB"
 
 
 df.to_sql(
-    "gdk_order_check3_tl",
+    "gdk_employee_tl_02",
     con=engine,
     if_exists="replace",
     index=False,

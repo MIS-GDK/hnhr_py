@@ -5,14 +5,14 @@ def add_single_quotes(address, filename):
         for i in range(len(lines)):
             if i != len(lines) - 1:
                 # a = lines[i].strip() + ","
-                a = "" + lines[i].strip() + ","
+                a = "'" + lines[i].strip() + "',"
                 # a = "grant select on hrhnprod." + lines[i].strip() + " to HRHNRYSC;"
             else:
                 # a = lines[i].strip()
-                a = "" + lines[i].strip() + ""
+                a = "'" + lines[i].strip() + "'"
                 # a = "grant select on hrhnprod." + lines[i].strip() + " to HRHNRYSC;"
             f.write(a)
             f.write("\n")
 
 
-add_single_quotes("C:/Users/Administrator/Desktop", "2.txt")
+add_single_quotes("C:/Users/Administrator/Desktop", "1.txt")
