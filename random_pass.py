@@ -1,7 +1,8 @@
-import random
-import string
-import re
 import hashlib
+import random
+import re
+import string
+
 import cx_Oracle
 
 Pass_result = ""
@@ -34,7 +35,7 @@ def update_database_update():
     # 获取cursor
     c = conn.cursor()
 
-    sql1 = "SELECT Pe.Employeeid FROM Pub_Employee Pe WHERE Pe.Employeeid IN (2263) AND Pe.Usestatus = 1"
+    sql1 = "SELECT Pe.Employeeid FROM Pub_Employee Pe WHERE Pe.Employeeid IN (37725) AND Pe.Usestatus = 1"
 
     sql2 = "update Pub_Employee pe set pe.webpass = :pass,pe.md5count=1,pe.leavejobstatus=0 where pe.employeeid = :id"
     # print(sql)

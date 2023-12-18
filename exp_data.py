@@ -1,12 +1,13 @@
+import re
 from operator import index
-from sqlalchemy.types import Integer, VARCHAR
+
 import cx_Oracle
 import pandas as pd
-from sqlalchemy import create_engine, types, Column
+from sqlalchemy import Column, create_engine, types
 
 # 导入支持oracle的数据类型
 from sqlalchemy.dialects.oracle import NUMBER, VARCHAR2
-import re
+from sqlalchemy.types import VARCHAR, Integer
 
 # engine = create_engine("oracle+cx_oracle://hrhnprod:9bcPa4hr16HN@SUPPLYCHAIN")
 # engine = create_engine(

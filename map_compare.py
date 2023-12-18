@@ -1,16 +1,16 @@
-from collections import defaultdict
 import operator
+from collections import defaultdict
 
 d1 = defaultdict(list)
 d2 = defaultdict(list)
-with open(r"C:\Users\Administrator\Desktop\1.txt") as f1:
+with open(r"C:\Users\Administrator\Desktop\1.txt", encoding="utf-8") as f1:
     line = f1.readline().strip()
     while line:
         id, sum1 = line.split()
         d1[id].append(float(sum1))
         line = f1.readline().strip()
 
-with open(r"C:\Users\Administrator\Desktop\2.txt") as f2:
+with open(r"C:\Users\Administrator\Desktop\2.txt", encoding="utf-8") as f2:
     line2 = f2.readline().strip()
     while line2:
         id, sum1 = line2.split()
@@ -24,9 +24,7 @@ total2 = 0
 
 for i in set(d1.keys()) | set(d2.keys()):
     if round(sum(d1[i]), 2) != round(sum(d2[i]), 2):
-        print(
-            "key:%s,周林绘: %s,高大奎: %s" % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2))
-        )
+        print("key:%s,驾驶舱: %s,用户: %s" % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2)))
 
         total += sum(d1[i]) - sum(d2[i])
 

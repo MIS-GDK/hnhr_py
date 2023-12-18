@@ -1,15 +1,15 @@
-import pandas
-import numpy
 import cx_Oracle
-from sqlalchemy.types import Integer, VARCHAR
+import numpy
+import pandas
 
 # from pandas import Series, DataFrame
-from sqlalchemy import create_engine, types, Column
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import Column, create_engine, types
 
 # 导入支持oracle的数据类型
 from sqlalchemy.dialects.oracle import NUMBER, VARCHAR2
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.types import VARCHAR, Integer
 
 
 def set_d_type_dict(df):
@@ -24,7 +24,7 @@ def set_d_type_dict(df):
     return type_dict
 
 
-df = pandas.read_csv("C:/Users/Administrator/Desktop/1.txt", sep="\t", encoding="utf-8")
+df = pandas.read_csv("C:/Users/Administrator/Desktop/4.txt", sep="\t", encoding="utf-8")
 
 print(df.columns)
 print(df.dtypes)
@@ -51,7 +51,7 @@ engine = create_engine("oracle+cx_oracle://hrhnprod:9bcPa4hr16HN@SUPPLYCHAIN")
 # engine = create_engine(connect_str, pool_recycle=3600)
 
 df.to_sql(
-    "gdk_employee_tl_02",
+    "gdk_temp_tl",
     con=engine,
     if_exists="replace",
     index=False,

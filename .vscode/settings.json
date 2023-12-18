@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310",
-    "python.defaultInterpreterPath": "C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python310"
+    "python.defaultInterpreterPath": "C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python310",
+    "isort.trace": "off"
 }
