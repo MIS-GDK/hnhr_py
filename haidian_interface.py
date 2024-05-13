@@ -1,6 +1,7 @@
-import cx_Oracle
 import logging
 import time
+
+import cx_Oracle
 
 
 class HaiDian:
@@ -65,7 +66,7 @@ class HaiDian:
             c.close()
 
             # 关闭连接
-            # conn.commit()
+            conn.commit()
             conn.close()
         except Exception as e:
             print(e)
@@ -186,9 +187,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M",
     filename=r"E:/haidian_log.txt",
 )
-billno_list = [
-    '122204110000373', '122204070000674'
-]
+billno_list = ["122405060000122"]
 for i in billno_list:
     test = HaiDian(i)
     test.update_database_interface()

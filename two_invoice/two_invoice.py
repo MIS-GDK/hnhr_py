@@ -1,5 +1,6 @@
 import logging
 import logging.handlers
+
 import cx_Oracle
 import pyodbc
 
@@ -137,6 +138,8 @@ if __name__ == "__main__":
         # 连接mssql执行查询
         new_mssql.mssql_conn()
         sqlstr1 = "select top 100 * from  SCAN_STATE_ERP where (FP_STATE = 'E' or SH_STATE = 'E' ) and UPD_STATE = '0'"
+        # 上述语句结果查询
+        # ROW_ID,ENTRY_ID,BATCH_ID,FP_STATE,SH_STATE,UPD_STATE,CREATE_DATE,UPD_DATE,SUPPLY_INVO NO
         list1 = new_mssql.mssql_select(sqlstr1)
         if list1:
             sqlstr2 = "UPDATE Bms_Batch_Def SET Invscanflag = (:1), Listscanflag = (:2) WHERE Batchid =(:3)"

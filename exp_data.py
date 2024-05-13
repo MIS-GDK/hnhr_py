@@ -27,8 +27,7 @@ SELECT DISTINCT a.Objbusno "机构编码",
                 e.Warespec "商品规格"
   FROM t_Md_Notice_Accept_h a, t_Md_Notice_Accept_d b, v_Ware_Base e
  WHERE a.Billcode = 'MDACN'
-   AND (a.Compid IN (SELECT Compid FROM s_Company WHERE Parentid = {compid}) OR
-       a.Compid = {compid})
+   AND a.Compid = {compid}
    AND (a.Execdate >= To_Date({date1}, 'yyyy-MM-dd'))
    AND (a.Execdate < To_Date({date2}, 'yyyy-MM-dd'))
    AND a.Acceptno = b.Acceptno
@@ -40,13 +39,44 @@ SELECT DISTINCT a.Objbusno "机构编码",
          WHERE c.Acceptno = d.Acceptno
            AND c.Execdate < To_Date({date1}, 'yyyy-MM-dd')
            AND c.Billcode = 'MDACN'
-           AND (c.Compid IN
-               (SELECT Compid FROM s_Company WHERE Parentid = {compid}) OR
-               c.Compid = {compid})
+           AND c.Compid = {compid}
            AND d.Wareid = b.Wareid
            AND c.Objbusno = a.Objbusno)
  ORDER BY a.Objbusno
 """
+sql1youhua = """
+SELECT DISTINCT a.Objbusno "机构编码",
+                (SELECT s_Busi.Orgname
+                   FROM s_Busi
+                  WHERE s_Busi.Busno = a.Objbusno) "机构名称",
+                b.Wareid "商品id",
+                e.Warecode "商品编码",
+                e.Warename "商品名称",
+                e.Warespec "商品规格"
+  FROM t_Dist_d b, t_Dist_h a, v_Ware_Base e
+ WHERE b.Distno = a.Distno
+   AND b.Wareid = e.Wareid
+   AND a.Compid = e.Compid
+   AND (a.Execdate >= To_Date({date1}, 'yyyy-MM-dd'))
+   AND (a.Execdate < To_Date({date2}, 'yyyy-MM-dd'))
+   AND a.Billcode = 'DIS'
+   AND a.Compid = {compid}
+   AND NOT EXISTS
+ (SELECT t_Dist_d.Distno   AS Distno,
+               t_Dist_d.Rowno    AS Rowno,
+               t_Dist_d.Wareid   AS Wareid,
+               t_Dist_h.Objbusno
+          FROM t_Dist_d t_Dist_d
+          JOIN t_Dist_h t_Dist_h
+            ON t_Dist_d.Distno = t_Dist_h.Distno
+         WHERE t_Dist_h.Objbusno = a.Objbusno
+           AND t_Dist_d.Wareid = b.Wareid
+           AND t_Dist_h.Execdate < To_Date({date1}, 'yyyy-MM-dd')
+           AND t_Dist_h.Billcode = 'DIS'
+           AND t_Dist_h.Compid = {compid})
+ ORDER BY a.Objbusno
+"""
+
 # 参数生成
 while True:
     compid = input("请输入机构ID:")
@@ -73,6 +103,7 @@ while True:
         continue
 info1 = {"compid": compid, "date1": "'" + date1 + "'", "date2": "'" + date2 + "'"}
 sql1 = sql1.format(**info1)
+sql1youhua = sql1youhua.format(**info1)
 # print(sql1)
 sql2 = """
 SELECT DISTINCT t_Accept_h.Busno "机构编码",
@@ -113,6 +144,7 @@ address = r"C:\Users\Administrator\Desktop"
 filename = compid + "首次购进.xlsx"
 
 if compid == "2209":
+    # df1 = pd.read_sql_query(sql1, engine)
     df1 = pd.read_sql_query(sql1, engine)
     df1.to_excel(address + "\\" + filename)
 else:

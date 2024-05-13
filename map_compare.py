@@ -24,7 +24,10 @@ total2 = 0
 
 for i in set(d1.keys()) | set(d2.keys()):
     if round(sum(d1[i]), 2) != round(sum(d2[i]), 2):
-        print("key:%s,驾驶舱: %s,用户: %s" % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2)))
+        print(
+            "key:%s,驾驶舱: %s,用户: %s"
+            % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2))
+        )
 
         total += sum(d1[i]) - sum(d2[i])
 

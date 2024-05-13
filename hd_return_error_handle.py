@@ -14,9 +14,9 @@ class HaiDian:
         # 查询采购退货明细表中的原批发销售单头id，销售发票细单行id为空的行，也就是接口行状态异常的
         pm = {":billno": self.billno}
         sql = (
-                "select a.rowid,a.reacceptno,a.rowno,a.batsaleno,a.batsalerowno "
-                + "from d_reaccept_d a "
-                + "where reacceptno in (:billno) "
+            "select a.rowid,a.reacceptno,a.rowno,a.batsaleno,a.batsalerowno "
+            + "from d_reaccept_d a "
+            + "where reacceptno in (:billno) "
         )
         # print(sql)
         try:
@@ -33,11 +33,7 @@ class HaiDian:
                 final_data = self.conn_inca_database_data(int(data[3]), int(data[4]))
                 if final_data:
                     print(final_data)
-                    param = {
-                        ":1": data[1],
-                        ":2": data[2],
-                        ":3": final_data[0][1]
-                    }
+                    param = {":1": data[1], ":2": data[2], ":3": final_data[0][1]}
                     sql = "update d_Reaccept_d a set a.batsalerowno = :3  WHERE a.Reacceptno = :1 AND a.Rowno = :2"
                     x = c.execute(sql, param)
             c.close()
@@ -63,14 +59,13 @@ class HaiDian:
             "Salesid": Salesid,
             "Iodtlid": Iodtlid,
         }
-        sql = ("""
+        sql = """
         SELECT b.Salesid, b.Sasettledtlid
             FROM Bms_Sa_Settle_Doc a, Bms_Sa_Settle_Dtl b
         WHERE a.Sasettleid = b.Sasettleid
             AND a.Salesid = {Salesid}
             AND b.Iodtlid = {Iodtlid}
         """
-               )
         sql2 = sql.format(**pm)
         try:
             # print(sql)
@@ -94,9 +89,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M",
     filename=r"E:/haidian_log.txt",
 )
-billno_list = [
-    '122312160000034'
-]
+billno_list = ["122405060000122"]
 for i in billno_list:
     test = HaiDian(i)
     test.update_database_interface()

@@ -24,7 +24,7 @@ def set_d_type_dict(df):
     return type_dict
 
 
-df = pandas.read_csv("C:/Users/Administrator/Desktop/4.txt", sep="\t", encoding="utf-8")
+df = pandas.read_csv("C:/Users/Administrator/Desktop/1.txt", sep="\t", encoding="utf-8")
 
 print(df.columns)
 print(df.dtypes)
