@@ -39,7 +39,7 @@ class HaiDian:
                 # logging.info(data[1:])
                 final_data = self.conn_haidian_database_data(data[1], data[2])
                 if final_data:
-                    print(final_data)
+                    print(t)
                     param = {
                         ":1": data[1],
                         ":2": data[2],
@@ -187,7 +187,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M",
     filename=r"E:/haidian_log.txt",
 )
-billno_list = ["122405060000122"]
+billno_list = ["122410220000345"]
 for i in billno_list:
     test = HaiDian(i)
     test.update_database_interface()

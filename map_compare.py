@@ -25,31 +25,9 @@ total2 = 0
 for i in set(d1.keys()) | set(d2.keys()):
     if round(sum(d1[i]), 2) != round(sum(d2[i]), 2):
         print(
-            "key:%s,驾驶舱: %s,用户: %s"
-            % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2))
+            "批次ID:%s,BI: %s,ERP: %s" % (i, round(sum(d1[i]), 2), round(sum(d2[i]), 2))
         )
 
         total += sum(d1[i]) - sum(d2[i])
 
 print(total)
-
-for i in set(d1.keys()) | set(d2.keys()):
-    if round(sum(d1[i]), 2) != round(sum(d2[i]), 2):
-        print(i + ",")
-# for i in f(d1, d2).keys():
-#     result = set(d1[i]) ^ set(d2[i])
-#     mylist = [int(i) for i in result]
-#     # for i in mylist:
-#     #     print(i, type(i))
-#     # print(mylist)
-#     if result:
-#         result.discard(0)
-#         # print(mylist)
-#         if result:
-#             # print(i)
-#             # print("key:%s,values:%s" % (i, result))
-#             # print("key:%s,values1:%s,values2:%s,result:%s" % (i, d1[i], d2[i], result))
-#             print("key:%s,result:%s" % (i, result))
-#             print(int(sum(mylist)))
-#             sum2 = sum2 + int(sum(mylist))
-# print(sum2)

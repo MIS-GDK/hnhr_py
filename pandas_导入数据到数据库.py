@@ -27,7 +27,7 @@ def set_d_type_dict(df):
     return type_dict
 
 
-df = pandas.read_csv("C:/Users/Administrator/Desktop/3.txt", sep="\t", encoding="utf-8")
+df = pandas.read_csv("C:/Users/Administrator/Desktop/2.txt", sep="\t", encoding="utf-8")
 
 
 # print(df.dtypes)
@@ -60,7 +60,7 @@ engine = create_engine("oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB"
 
 
 df.to_sql(
-    "gdk_address_tl2",
+    "gdk_temp_tl",
     con=engine,
     if_exists="replace",
     index=False,

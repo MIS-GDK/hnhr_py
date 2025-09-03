@@ -44,7 +44,7 @@ END;
 
 def read_data():
     # 示例用法
-    with open(r"C:\Users\Administrator\Desktop\2.txt", mode="r", encoding="utf-8") as f:
+    with open(r"C:\Users\Administrator\Desktop\1.txt", mode="r", encoding="utf-8") as f:
         sql_script_content = f.read()
     # 使用SQL关键字进行区分
     create_statements = []
@@ -83,7 +83,7 @@ def write_data(data):
         f.write(data)
 
 
-expected_count = 30
+expected_count = 2
 creates_list, updates_list = read_data()
 plsql_script = generate_plsql_updates(creates_list, updates_list, expected_count)
 print(plsql_script)
