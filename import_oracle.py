@@ -1,7 +1,9 @@
 import logging
 import pandas as pd
 from sqlalchemy import create_engine, text
-from sqlalchemy.types import VARCHAR, Integer, DECIMAL
+
+from sqlalchemy.types import VARCHAR, Integer, DECIMAL, NUMERIC
+from sqlalchemy.dialects.oracle import VARCHAR2, NUMBER
 from sqlalchemy.exc import SQLAlchemyError
 
 # 配置日志
@@ -17,13 +19,23 @@ def get_data_types(df):
     type_dict = {}
     for col, dtype in df.items():
         if "object" in str(dtype):
-            type_dict[col] = VARCHAR(512)
+            # 将VARCHAR2长度减小，避免超出Oracle限制
+            max_length = df[col].str.len().max()
+            if pd.isna(max_length):
+                max_length = 100
+            else:
+                max_length = min(
+                    int(max_length * 1.2), 4000
+                )  # 给予20%的余量，但不超过4000
+            type_dict[col] = VARCHAR2(max_length)
+        if "object" in str(dtype):
+            type_dict[col] = VARCHAR2(1000)
         elif "string" in str(dtype):
-            type_dict[col] = VARCHAR(512)
+            type_dict[col] = VARCHAR2(1000)
         elif "float" in str(dtype):
-            type_dict[col] = DECIMAL(20, 2)
+            type_dict[col] = NUMBER(38, 2)
         elif "int" in str(dtype):
-            type_dict[col] = Integer()
+            type_dict[col] = NUMBER(38)
     return type_dict
 
 
@@ -41,12 +53,7 @@ def import_to_database(file_path, table_name, connection_string, chunk_size=1000
     try:
         # 读取数据文件
         logging.info(f"开始读取文件: {file_path}")
-        df = pd.read_csv(
-            file_path,
-            sep="\t",
-            encoding="utf-8",
-            dtype_backend="numpy_nullable",  # 优化内存使用
-        )
+        df = pd.read_csv(file_path, sep="\t", encoding="utf-8")
 
         logging.info(f"成功读取 {len(df)} 行数据")
 
@@ -64,7 +71,7 @@ def import_to_database(file_path, table_name, connection_string, chunk_size=1000
                 if_exists="replace",
                 index=False,
                 dtype=dtype_dict,
-                chunksize=chunk_size,  # 分批导入
+                chunksize=chunk_size,
             )
 
             # 验证导入结果
@@ -97,6 +104,7 @@ def import_to_database(file_path, table_name, connection_string, chunk_size=1000
 if __name__ == "__main__":
     # 数据库连接配置
     CONNECTION_STRING = "oracle+cx_oracle://hrhnprod:9bcPa4hr16HN@SUPPLYCHAIN"
+    # CONNECTION_STRING ="oracle://hrhnprod:9bcPa4hr16HN@192.168.0.43:1525/HRHNDB"
 
     # 执行导入
     success, message = import_to_database(

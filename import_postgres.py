@@ -1,5 +1,5 @@
 import pandas as pd
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, Text, text
 from sqlalchemy.types import VARCHAR, Integer, DECIMAL
 from sqlalchemy.dialects.postgresql import DOUBLE_PRECISION
 from urllib.parse import quote_plus
@@ -12,7 +12,7 @@ def get_postgres_types(df):
     type_dict = {}
     for col, dtype in zip(df.columns, df.dtypes):
         if "object" in str(dtype):
-            type_dict[col] = VARCHAR(512)
+            type_dict[col] = Text()
         elif "float" in str(dtype):
             type_dict[col] = DOUBLE_PRECISION
         elif "int" in str(dtype):
@@ -65,7 +65,7 @@ def import_to_postgres(file_path, table_name, schema=None):
 if __name__ == "__main__":
     # 调用导入函数
     import_to_postgres(
-        file_path="C:/Users/Administrator/Desktop/2.txt",
-        table_name="gdk_temp_tl",
+        file_path="C:/Users/Administrator/Desktop/1.txt",
+        table_name="t_receiver_user",
         schema="bilocal",  # 可选参数，不指定则使用默认schema
     )

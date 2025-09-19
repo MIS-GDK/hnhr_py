@@ -7,5 +7,7 @@
             "packageManager": "ms-python.python:conda"
         }
     ],
-    "jupyter.jupyterCommandLineArguments": []
+    "jupyter.jupyterCommandLineArguments": [],
+    "editor.formatOnSave": true,
+    "python.analysis.autoImportCompletions": true,
 }

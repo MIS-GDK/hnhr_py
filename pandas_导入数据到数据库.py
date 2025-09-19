@@ -21,7 +21,7 @@ def set_d_type_dict(df):
         if "object" in str(j):
             type_dict.update({i: VARCHAR(512)})
         if "float" in str(j):
-            type_dict.update({i: Integer()})
+            type_dict.update({i: NUMBER(20, 2)})
         if "int" in str(j):
             type_dict.update({i: Integer()})
     return type_dict
