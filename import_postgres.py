@@ -66,6 +66,6 @@ if __name__ == "__main__":
     # 调用导入函数
     import_to_postgres(
         file_path="C:/Users/Administrator/Desktop/1.txt",
-        table_name="t_receiver_user",
+        table_name="t_report_usage",
         schema="bilocal",  # 可选参数，不指定则使用默认schema
     )

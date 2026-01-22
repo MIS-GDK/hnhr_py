@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     # 执行导入
     success, message = import_to_database(
-        file_path="C:/Users/Administrator/Desktop/2.txt",
+        file_path="C:/Users/Administrator/Desktop/1.txt",
         table_name="gdk_temp_tl",
         connection_string=CONNECTION_STRING,
     )
